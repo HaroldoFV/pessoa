@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  pessoa:
+    image: ${DOCKER_REGISTRY-}pessoa
+    build:
+      context: .
+      dockerfile: Pessoa/Dockerfile
