@@ -28,6 +28,8 @@ namespace Pessoa
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var connectionString = Configuration.GetConnectionString("DefaultConnection");
+            services.AddDbContext<PessoaContext>(opts => opts.UseNpgsql(connectionString));
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -35,8 +37,6 @@ namespace Pessoa
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Pessoa", Version = "v1" });
             });
 
-            var connectionString = Configuration.GetConnectionString("Default");
-            services.AddDbContext<PessoaContext>(opts => opts.UseNpgsql(connectionString));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
