@@ -3,7 +3,7 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>{0B5FE038-1678-4C6D-9696-48674182BA7C}</ProjectGuid>
+    <ProjectGuid>{FB3BB041-7F03-4523-A132-C8AF3D69F4A7}</ProjectGuid>
     <DockerLaunchBrowser>True</DockerLaunchBrowser>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
     <DockerServiceName>pessoa</DockerServiceName>

@@ -10,8 +10,8 @@ using Pessoa.Data;
 namespace Pessoa.Migrations
 {
     [DbContext(typeof(PessoaContext))]
-    [Migration("20210504021915_inicial")]
-    partial class inicial
+    [Migration("20210507204052_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
