@@ -6,6 +6,8 @@ services:
     build:
       context: .
       dockerfile: Pessoa/Dockerfile
+    depends_on:
+      - postgresql_database
 
   postgresql_database:
     image: postgres:latest
@@ -18,18 +20,6 @@ services:
     restart: always
     volumes:
       - database-data:/var/lib/postgresql/data/
-     
-  pgadmin:
-    image: dpage/pgadmin4
-    environment:
-      - PGADMIN_DEFAULT_EMAIL=pgadmin4@pgadmin.org
-      - PGADMIN_DEFAULT_PASSWORD=admin1234
-    ports:
-      - "5050:80"
-    restart: always
-    volumes:
-      - pgadmin:/root/.pgadmin
 
 volumes:
   database-data:
-  pgadmin:
