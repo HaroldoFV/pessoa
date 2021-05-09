@@ -1,12 +1,7 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Pessoa.Data;
-using Pessoa.Models;
 
 namespace Pessoa.Controllers
 {
@@ -14,32 +9,61 @@ namespace Pessoa.Controllers
     [ApiController]
     public class PessoaController : ControllerBase
     {
-        private readonly PessoaContext _context;
+        private readonly IPessoaRepository _pessoaRepository;
 
-        public PessoaController(PessoaContext context)
+        public PessoaController(IPessoaRepository pessoaRepository)
         {
-            _context = context;
+            _pessoaRepository = pessoaRepository;
         }
 
         // GET: api/Pessoa
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Models.Pessoa>>> GetPessoas()
+        public async Task<ActionResult<IEnumerable<Models.Pessoa>>> ListarPessoas()
         {
-            return await _context.Pessoas.ToListAsync();
+            var pessoas = await _pessoaRepository.Listar();
+            return Ok(pessoas);
         }
 
         // GET: api/Pessoa/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Models.Pessoa>> GetPessoa(int id)
+        public async Task<ActionResult<Models.Pessoa>> BuscarPessoaPorId(int id)
         {
-            var pessoa = await _context.Pessoas.FindAsync(id);
+            var pessoa = await _pessoaRepository.BuscarPorCodigo(id);
 
             if (pessoa == null)
             {
                 return NotFound();
             }
 
-            return pessoa;
+            return Ok(pessoa);
+        }
+
+        // GET: api/Pessoa/
+        [HttpGet("nome/{nome}")]
+        public async Task<ActionResult<Models.Pessoa>> BuscarPessoaPorNome(string nome)
+        {
+            var pessoa = await _pessoaRepository.BuscarPorNome(nome);
+
+            if (pessoa == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(pessoa);
+        }
+
+        // GET: api/Pessoa/
+        [HttpGet("cpf/{cpf}")]
+        public async Task<ActionResult<Models.Pessoa>> BuscarPessoaPorCpf(string cpf)
+        {
+            var pessoa = await _pessoaRepository.BuscarPorCpf(cpf);
+
+            if (pessoa == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(pessoa);
         }
 
         // PUT: api/Pessoa/5
@@ -52,22 +76,14 @@ namespace Pessoa.Controllers
                 return BadRequest();
             }
 
-            _context.Entry(pessoa).State = EntityState.Modified;
 
             try
             {
-                await _context.SaveChangesAsync();
+                await _pessoaRepository.Update(pessoa);
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!PessoaExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+                throw;
             }
 
             return NoContent();
@@ -78,15 +94,7 @@ namespace Pessoa.Controllers
         [HttpPost]
         public async Task<ActionResult<Models.Pessoa>> PostPessoa(Models.Pessoa pessoa)
         {
-            try
-            {
-
-                _context.Pessoas.Add(pessoa);
-                await _context.SaveChangesAsync();
-
-            } catch(Exception e)
-            {
-            }
+            await _pessoaRepository.Add(pessoa);
 
             return CreatedAtAction("GetPessoa", new { id = pessoa.Id }, pessoa);
         }
@@ -95,21 +103,10 @@ namespace Pessoa.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeletePessoa(int id)
         {
-            var pessoa = await _context.Pessoas.FindAsync(id);
-            if (pessoa == null)
-            {
-                return NotFound();
-            }
-
-            _context.Pessoas.Remove(pessoa);
-            await _context.SaveChangesAsync();
+            await _pessoaRepository.Delete(id);
 
             return NoContent();
         }
 
-        private bool PessoaExists(int id)
-        {
-            return _context.Pessoas.Any(e => e.Id == id);
-        }
     }
 }

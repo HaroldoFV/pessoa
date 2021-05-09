@@ -13,6 +13,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Pessoa.Data;
+using Pessoa.Repositories;
 
 namespace Pessoa
 {
@@ -30,6 +31,7 @@ namespace Pessoa
         {
             var connectionString = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<PessoaContext>(opts => opts.UseNpgsql(connectionString));
+            services.AddScoped<IPessoaRepository, PessoaRepository>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
