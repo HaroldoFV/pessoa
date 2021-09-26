@@ -4,7 +4,7 @@ services:
   pessoa:
     image: ${DOCKER_REGISTRY-}pessoa
     build:
-      context: .
+      context:               .
       dockerfile: Pessoa/Dockerfile
     depends_on:
       - postgresql_database
