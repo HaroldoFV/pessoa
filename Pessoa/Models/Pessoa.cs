@@ -30,5 +30,10 @@ namespace Pessoa.Models
             Nome = nome;
             Endereco = endereco;
         }
+
+        public void Active()
+        {
+
+        }
     }
 }
