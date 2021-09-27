@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace Pessoa.Models
 {
     public class Pessoa
@@ -31,7 +31,8 @@ namespace Pessoa.Models
             Endereco = endereco;
         }
 
-        public void Active(int status)///
+
+        public void Active(int status)
         {
 
         }
