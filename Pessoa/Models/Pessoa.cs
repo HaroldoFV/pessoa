@@ -31,8 +31,7 @@ namespace Pessoa.Models
             Endereco = endereco;
         }
 
-
-        public void Active(int status)
+        public void Active(int status, string action)
         {
 
         }
