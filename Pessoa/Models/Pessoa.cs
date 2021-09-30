@@ -1,4 +1,3 @@
-using System;
 namespace Pessoa.Models
 {
     public class Pessoa
@@ -33,8 +32,8 @@ namespace Pessoa.Models
 
         public void Active(int status, string action)
         {
-
+            //lala
+            //mais testes...
         }
-        //mais testes...
     }
 }

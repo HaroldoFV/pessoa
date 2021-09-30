@@ -38,5 +38,10 @@
             Estado = estado;
             Pais = pais;
         }
+
+        public void Desativar()
+        {
+
+        }
     }
 }
