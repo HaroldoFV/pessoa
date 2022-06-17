@@ -1,0 +1,126 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/haroldovinente/Projects/back-end/DDD/039E27E4-F88B-4013-A59C-8B0DF8FE9C64-03 - Sagas, Service Bus e MSMQ/Pedido/Pedido.csproj": {}
+  },
+  "projects": {
+    "/Users/haroldovinente/Projects/back-end/DDD/039E27E4-F88B-4013-A59C-8B0DF8FE9C64-03 - Sagas, Service Bus e MSMQ/Core/Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/haroldovinente/Projects/back-end/DDD/039E27E4-F88B-4013-A59C-8B0DF8FE9C64-03 - Sagas, Service Bus e MSMQ/Core/Core.csproj",
+        "projectName": "Core",
+        "projectPath": "/Users/haroldovinente/Projects/back-end/DDD/039E27E4-F88B-4013-A59C-8B0DF8FE9C64-03 - Sagas, Service Bus e MSMQ/Core/Core.csproj",
+        "packagesPath": "/Users/haroldovinente/.nuget/packages/",
+        "outputPath": "/Users/haroldovinente/Projects/back-end/DDD/039E27E4-F88B-4013-A59C-8B0DF8FE9C64-03 - Sagas, Service Bus e MSMQ/Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/haroldovinente/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "targetAlias": "netcoreapp2.2",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "targetAlias": "netcoreapp2.2",
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "rebus": {
+              "target": "Package",
+              "version": "[5.3.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100-preview.6.21355.2/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/haroldovinente/Projects/back-end/DDD/039E27E4-F88B-4013-A59C-8B0DF8FE9C64-03 - Sagas, Service Bus e MSMQ/Pedido/Pedido.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/haroldovinente/Projects/back-end/DDD/039E27E4-F88B-4013-A59C-8B0DF8FE9C64-03 - Sagas, Service Bus e MSMQ/Pedido/Pedido.csproj",
+        "projectName": "Pedido",
+        "projectPath": "/Users/haroldovinente/Projects/back-end/DDD/039E27E4-F88B-4013-A59C-8B0DF8FE9C64-03 - Sagas, Service Bus e MSMQ/Pedido/Pedido.csproj",
+        "packagesPath": "/Users/haroldovinente/.nuget/packages/",
+        "outputPath": "/Users/haroldovinente/Projects/back-end/DDD/039E27E4-F88B-4013-A59C-8B0DF8FE9C64-03 - Sagas, Service Bus e MSMQ/Pedido/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/haroldovinente/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "targetAlias": "netcoreapp2.2",
+            "projectReferences": {
+              "/Users/haroldovinente/Projects/back-end/DDD/039E27E4-F88B-4013-A59C-8B0DF8FE9C64-03 - Sagas, Service Bus e MSMQ/Core/Core.csproj": {
+                "projectPath": "/Users/haroldovinente/Projects/back-end/DDD/039E27E4-F88B-4013-A59C-8B0DF8FE9C64-03 - Sagas, Service Bus e MSMQ/Core/Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "targetAlias": "netcoreapp2.2",
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100-preview.6.21355.2/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

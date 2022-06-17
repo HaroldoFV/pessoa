@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{575A415E-D46E-47DC-9E6E-EDC982CEE65F}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/NerdStore.Catalogo.Data/CatalogoContext.cs">
+    <Files>
+      <File FileName="src/NerdStore.Catalogo.Domain/Categoria.cs" Line="31" Column="32" />
+      <File FileName="src/NerdStore.Catalogo.Domain/Dimensoes.cs" Line="1" Column="1" />
+      <File FileName="src/NerdStore.Catalogo.Domain/EstoqueService.cs" Line="22" Column="38" />
+      <File FileName="src/NerdStore.Catalogo.Domain/IEstoqueService.cs" Line="7" Column="22" />
+      <File FileName="src/NerdStore.Catalogo.Domain/IProdutoRepository.cs" Line="18" Column="38" />
+      <File FileName="src/NerdStore.Catalogo.Domain/Produto.cs" Line="6" Column="46" />
+      <File FileName="src/NerdStore.Core/DomainObjects/IAggregateRoot.cs" Line="3" Column="22" />
+      <File FileName="src/NerdStore.Catalogo.Data/CatalogoContext.cs" Line="45" Column="54" />
+      <File FileName="src/NerdStore.Catalogo.Data/Repository/ProdutoRepository.cs" Line="29" Column="39" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="NerdStore" expanded="True">
+            <Node name="Services" expanded="True">
+              <Node name="Catalogo" expanded="True">
+                <Node name="NerdStore.Catalogo.Data" expanded="True">
+                  <Node name="Repository" expanded="True" />
+                  <Node name="CatalogoContext.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.WebApps.NerdStore.WebApp.MVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Services.Catalogo.Tests.NerdStore.Catalogo.Domain.Tests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

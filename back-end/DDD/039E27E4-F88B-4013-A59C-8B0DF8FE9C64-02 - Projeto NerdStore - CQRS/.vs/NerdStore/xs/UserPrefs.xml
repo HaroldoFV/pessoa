@@ -1,0 +1,71 @@
+﻿<Properties StartupConfiguration="{575A415E-D46E-47DC-9E6E-EDC982CEE65F}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/NerdStore.Vendas.Application/Queries/PedidoQueries.cs">
+    <Files>
+      <File FileName="src/NerdStore.Catalogo.Data/Repository/ProdutoRepository.cs" Line="20" Column="1" />
+      <File FileName="src/NerdStore.Catalogo.Data/Mappings/CategoriaMapping.cs" Line="1" Column="1" />
+      <File FileName="src/NerdStore.Catalogo.Data/Mappings/ProdutoMapping.cs" Line="43" Column="2" />
+      <File FileName="src/NerdStore.Catalogo.Application/Services/ProdutoAppService.cs" Line="50" Column="1" />
+      <File FileName="src/NerdStore.Catalogo.Application/Services/IProdutoAppService.cs" />
+      <File FileName="src/NerdStore.Catalogo.Application/ViewModels/CategoriaViewModel.cs" Line="1" Column="1" />
+      <File FileName="src/NerdStore.Catalogo.Application/ViewModels/ProdutoViewModel.cs" Line="1" Column="1" />
+      <File FileName="src/NerdStore.Catalogo.Application/AutoMapper/DomainToViewModelMappingProfile.cs" Line="1" Column="1" />
+      <File FileName="src/NerdStore.Catalogo.Application/AutoMapper/ViewModelToDomainMappingProfile.cs" Line="1" Column="1" />
+      <File FileName="src/NerdStore.Catalogo.Data/CatalogoContext.cs" Line="36" Column="49" />
+      <File FileName="src/NerdStore.Catalogo.Domain/Events/ProdutoAbaixoEstoqueEvent.cs" Line="1" Column="1" />
+      <File FileName="src/NerdStore.Catalogo.Domain/Events/ProdutoEventHandler.cs" Line="51" Column="10" />
+      <File FileName="src/NerdStore.Catalogo.Domain/Categoria.cs" Line="1" Column="1" />
+      <File FileName="src/NerdStore.Catalogo.Domain/Dimensoes.cs" Line="1" Column="1" />
+      <File FileName="src/NerdStore.Catalogo.Domain/EstoqueService.cs" Line="1" Column="1" />
+      <File FileName="src/NerdStore.Catalogo.Domain/IEstoqueService.cs" Line="1" Column="1" />
+      <File FileName="src/NerdStore.Catalogo.Domain/IProdutoRepository.cs" Line="1" Column="1" />
+      <File FileName="src/NerdStore.Catalogo.Domain/Produto.cs" Line="21" Column="10" />
+      <File FileName="src/NerdStore.Core/Data/IRepository.cs" Line="1" Column="1" />
+      <File FileName="src/NerdStore.Core/Data/IUnitOfWork.cs" Line="1" Column="1" />
+      <File FileName="src/NerdStore.Core/DomainObjects/Validacoes.cs" Line="1" Column="1" />
+      <File FileName="src/NerdStore.Core/DomainObjects/IAggregateRoot.cs" Line="1" Column="1" />
+      <File FileName="src/NerdStore.Core/DomainObjects/Entity.cs" Line="12" Column="52" />
+      <File FileName="src/NerdStore.Core/DomainObjects/DomainException.cs" Line="1" Column="1" />
+      <File FileName="src/NerdStore.Core/DomainObjects/DTO/ListaProdutosPedido.cs" Line="1" Column="1" />
+      <File FileName="src/NerdStore.Core/DomainObjects/DTO/PagamentoPedido.cs" Line="1" Column="1" />
+      <File FileName="src/NerdStore.Pagamentos.AntiCorruption/ConfigurationManager.cs" Line="1" Column="1" />
+      <File FileName="src/NerdStore.Pagamentos.AntiCorruption/IConfigurationManager.cs" Line="7" Column="2" />
+      <File FileName="src/NerdStore.Pagamentos.AntiCorruption/IPayPalGateway.cs" Line="1" Column="1" />
+      <File FileName="src/NerdStore.Pagamentos.AntiCorruption/PagamentoCartaoCreditoFacade.cs" Line="44" Column="2" />
+      <File FileName="src/NerdStore.Pagamentos.AntiCorruption/PayPalGateway.cs" Line="26" Column="2" />
+      <File FileName="src/NerdStore.Pagamentos.Business/Events/PagamentoEventHandler.cs" Line="1" Column="1" />
+      <File FileName="src/NerdStore.Pagamentos.Business/PagamentoService.cs" Line="21" Column="44" />
+      <File FileName="src/NerdStore.Vendas.Application/Commands/AdicionarItemPedidoCommand.cs" Line="20" Column="37" />
+      <File FileName="src/NerdStore.Vendas.Application/Commands/AplicarVoucherPedidoCommand.cs" Line="1" Column="1" />
+      <File FileName="src/NerdStore.Vendas.Application/Queries/PedidoQueries.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="NerdStore" expanded="True">
+            <Node name="Services" expanded="True">
+              <Node name="Vendas" expanded="True">
+                <Node name="NerdStore.Vendas.Application" expanded="True">
+                  <Node name="Commands" expanded="True" />
+                  <Node name="Queries" expanded="True">
+                    <Node name="ViewModels" expanded="True" />
+                    <Node name="PedidoQueries.cs" selected="True" />
+                  </Node>
+                </Node>
+                <Node name="NerdStore.Vendas.Data" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="WebApps" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.WebApps.NerdStore.WebApp.MVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Services.Catalogo.Tests.NerdStore.Catalogo.Domain.Tests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

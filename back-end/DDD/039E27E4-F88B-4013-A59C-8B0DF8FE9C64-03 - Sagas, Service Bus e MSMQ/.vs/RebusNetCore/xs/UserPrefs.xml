@@ -1,0 +1,41 @@
+﻿<Properties StartupConfiguration="{E9A2D76A-B617-495C-AC84-6E6B5DC78CC8}|Default">
+  <MonoDevelop.Ide.ItemProperties.RebusNetCore PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pedido/PedidoSaga.cs">
+    <Files>
+      <File FileName="Core/Messages/Command.cs" Line="1" Column="1" />
+      <File FileName="Core/Messages/Event.cs" Line="1" Column="1" />
+      <File FileName="Core/Messages/Message.cs" Line="1" Column="1" />
+      <File FileName="Pagamento/Commands/RealizarPagamentoCommand.cs" Line="1" Column="1" />
+      <File FileName="Pagamento/PagamentoCommandHandler.cs" Line="1" Column="1" />
+      <File FileName="Pagamento/PagamentoEventHandler.cs" Line="1" Column="1" />
+      <File FileName="Pedido/Commands/RealizarPedidoCommand.cs" Line="1" Column="1" />
+      <File FileName="Pedido/PedidoEventHandler.cs" Line="1" Column="1" />
+      <File FileName="Pedido/PedidoSaga.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RebusNetCore" expanded="True">
+            <Node name="Core" expanded="True">
+              <Node name="Messages" expanded="True" />
+            </Node>
+            <Node name="Pagamento" expanded="True">
+              <Node name="Commands" expanded="True" />
+            </Node>
+            <Node name="Pedido" expanded="True">
+              <Node name="Commands" expanded="True" />
+              <Node name="PedidoSaga.cs" selected="True" />
+            </Node>
+            <Node name="RebusNetCore" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

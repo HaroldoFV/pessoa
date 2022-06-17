@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ViagemTableViewCell" id="KGk-i7-Jjw" customClass="ViagemTableViewCell" customModule="AluraViagens" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iMh-FL-ka9">
+                        <rect key="frame" x="10" y="10" width="300" height="380"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wtK-K5-3OE">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="6fI-4O-9R4"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AÉREO + HOTEL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccz-Hz-7c5">
+                                <rect key="frame" x="10" y="185" width="280" height="23"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Gramado + Rota do Chocolate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3K-j3-kzF">
+                                <rect key="frame" x="10" y="226" width="280" height="23"/>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 Diárias - 1 Pessoa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2T-9m-aaq">
+                                <rect key="frame" x="10" y="261" width="280" height="23"/>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apartitr de " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOy-Dx-EmE">
+                                <rect key="frame" x="10" y="292" width="72.5" height="20"/>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 1.138" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmq-kk-OMa">
+                                <rect key="frame" x="90" y="292" width="49" height="20"/>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 569" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeT-uQ-9vC">
+                                <rect key="frame" x="10" y="319" width="50" height="23"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="16"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="em até 12x" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3I-cC-put">
+                                <rect key="frame" x="68" y="322" width="58" height="17"/>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cancelamento Grátis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEE-pf-Uhv">
+                                <rect key="frame" x="10" y="343" width="280" height="17"/>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="12"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YEE-pf-Uhv" firstAttribute="leading" secondItem="iMh-FL-ka9" secondAttribute="leading" constant="10" id="4cY-yP-epB"/>
+                            <constraint firstItem="YEE-pf-Uhv" firstAttribute="top" secondItem="NeT-uQ-9vC" secondAttribute="bottom" constant="1" id="5X3-93-aJw"/>
+                            <constraint firstAttribute="trailing" secondItem="ccz-Hz-7c5" secondAttribute="trailing" constant="10" id="5YI-4h-gF7"/>
+                            <constraint firstAttribute="trailing" secondItem="wtK-K5-3OE" secondAttribute="trailing" id="7Yr-mR-SdJ"/>
+                            <constraint firstItem="k2T-9m-aaq" firstAttribute="top" secondItem="h3K-j3-kzF" secondAttribute="bottom" constant="15" id="7w7-ic-Js4"/>
+                            <constraint firstAttribute="trailing" secondItem="YEE-pf-Uhv" secondAttribute="trailing" constant="10" id="HAO-8D-oQH"/>
+                            <constraint firstItem="NeT-uQ-9vC" firstAttribute="leading" secondItem="iMh-FL-ka9" secondAttribute="leading" constant="10" id="J4u-VI-32X"/>
+                            <constraint firstItem="k2T-9m-aaq" firstAttribute="leading" secondItem="iMh-FL-ka9" secondAttribute="leading" constant="10" id="LS2-6a-DtW"/>
+                            <constraint firstItem="wtK-K5-3OE" firstAttribute="leading" secondItem="iMh-FL-ka9" secondAttribute="leading" id="NKt-3f-cEK"/>
+                            <constraint firstItem="ccz-Hz-7c5" firstAttribute="top" secondItem="wtK-K5-3OE" secondAttribute="bottom" constant="5" id="P6v-4k-FOv"/>
+                            <constraint firstItem="nmq-kk-OMa" firstAttribute="centerY" secondItem="hOy-Dx-EmE" secondAttribute="centerY" id="Skv-xQ-9Hd"/>
+                            <constraint firstAttribute="trailing" secondItem="k2T-9m-aaq" secondAttribute="trailing" constant="10" id="T4x-nr-nH9"/>
+                            <constraint firstItem="r3I-cC-put" firstAttribute="leading" secondItem="NeT-uQ-9vC" secondAttribute="trailing" constant="8" symbolic="YES" id="YwE-Bv-ZrM"/>
+                            <constraint firstItem="h3K-j3-kzF" firstAttribute="top" secondItem="ccz-Hz-7c5" secondAttribute="bottom" constant="15" id="b0W-RD-5B1"/>
+                            <constraint firstItem="NeT-uQ-9vC" firstAttribute="top" secondItem="hOy-Dx-EmE" secondAttribute="bottom" constant="7" id="gdx-sW-cpa"/>
+                            <constraint firstItem="ccz-Hz-7c5" firstAttribute="leading" secondItem="iMh-FL-ka9" secondAttribute="leading" constant="10" id="jUr-EU-UmV"/>
+                            <constraint firstItem="wtK-K5-3OE" firstAttribute="top" secondItem="iMh-FL-ka9" secondAttribute="top" id="kiQ-Nc-AzS"/>
+                            <constraint firstAttribute="trailing" secondItem="h3K-j3-kzF" secondAttribute="trailing" constant="10" id="lMs-5g-gUk"/>
+                            <constraint firstItem="hOy-Dx-EmE" firstAttribute="top" secondItem="k2T-9m-aaq" secondAttribute="bottom" constant="8" symbolic="YES" id="mzG-Hg-PIc"/>
+                            <constraint firstItem="h3K-j3-kzF" firstAttribute="leading" secondItem="iMh-FL-ka9" secondAttribute="leading" constant="10" id="qLL-eC-iXf"/>
+                            <constraint firstItem="r3I-cC-put" firstAttribute="centerY" secondItem="NeT-uQ-9vC" secondAttribute="centerY" id="qjd-MQ-kgW"/>
+                            <constraint firstItem="nmq-kk-OMa" firstAttribute="leading" secondItem="hOy-Dx-EmE" secondAttribute="trailing" constant="7.5" id="uRH-Kp-BE1"/>
+                            <constraint firstItem="hOy-Dx-EmE" firstAttribute="leading" secondItem="iMh-FL-ka9" secondAttribute="leading" constant="10" id="wHf-Zu-fkc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="iMh-FL-ka9" secondAttribute="trailing" constant="10" id="CWu-x2-MKO"/>
+                    <constraint firstItem="iMh-FL-ka9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="NuY-S0-4HM"/>
+                    <constraint firstItem="iMh-FL-ka9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Pb4-LA-fdW"/>
+                    <constraint firstAttribute="bottom" secondItem="iMh-FL-ka9" secondAttribute="bottom" constant="10" id="oEO-f1-Yf0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backgroundViewCell" destination="iMh-FL-ka9" id="Vxd-jx-96K"/>
+                <outlet property="diariaViagemLabel" destination="k2T-9m-aaq" id="A8G-yx-ruj"/>
+                <outlet property="precoSemDescontoLabel" destination="nmq-kk-OMa" id="zsN-01-MNO"/>
+                <outlet property="precoViagemLabel" destination="NeT-uQ-9vC" id="FZY-YH-vWS"/>
+                <outlet property="statusCancelamentoViagemLabel" destination="YEE-pf-Uhv" id="XDY-RL-Aco"/>
+                <outlet property="subtituloViagemLabel" destination="h3K-j3-kzF" id="p33-Zp-DfJ"/>
+                <outlet property="tituloViagemLabel" destination="ccz-Hz-7c5" id="C0e-w9-IPZ"/>
+                <outlet property="viagemImage" destination="wtK-K5-3OE" id="X47-Oa-96q"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
